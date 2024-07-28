@@ -12,7 +12,7 @@ h1,
 h2,
 h3 {
   text-align: center;
-  margin: 0;
+  margin-top: 30px;
 }
 
 h1 {
@@ -43,10 +43,7 @@ img {
   max-width: 100%;
   height: auto;
 }
-.app-description-heading,
-.app-description-paragraph {
-  text-align: start;
-}
+
 .app-description-link a:hover {
   color: blue;
   text-decoration: underline;
@@ -111,4 +108,20 @@ img {
 
 .email-link:hover {
   text-decoration: underline;
+}
+
+/* phone size */
+@media (max-width: 576px) {
+  .apps-container {
+    text-align: center;
+  }
+  img {
+    display: none;
+  }
+}
+/* larger than phone size */
+@media (min-width: 576px) {
+  .apps-container {
+    text-align: start;
+  }
 }
